@@ -13,13 +13,16 @@ public class Arrays1DFindValue {
         System.out.println("Enter the number to be searched in an array");
         int x = sc.nextInt();
 
-        System.out.println(x+" found at index: ");
-        for (int i=0; i<numbers.length; i++) {
-            if (numbers [i] == x ) {
-                System.out.println(i);
+        boolean flag = false;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == x) {
+                System.out.print(x+ " found at index "+i);
+                flag = true;
+                break;
             }
-
+        }
+        if (flag == false) {
+            System.out.println("Number not found");
         }
     }
-
 }
