@@ -20,13 +20,18 @@ public class Arrays2DFindValue {
         System.out.println("Enter number to be searched");
         int x = sc.nextInt();
 
+        boolean flag = false;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (numbers[i][j] == x) {
                     System.out.println(x+" found at location "+i + "," + j);
+                    flag = true;
+                    break;
                 }
             }
-
+        }
+        if (flag == false){
+            System.out.println("Element not found");
         }
     }
 }
