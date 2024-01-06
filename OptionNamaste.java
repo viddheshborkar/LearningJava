@@ -7,7 +7,7 @@ public class OptionNamaste {
         int option = sc.nextInt();
 
         if (option == 1) {
-            System.out.println("Hello");
+            System.out.println("HelloName");
         } else if (option == 2) {
             System.out.println("Namaste");
         } else if (option == 3) {

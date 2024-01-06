@@ -8,7 +8,7 @@ public class SwitchOption {
 
         switch (option) {
             case 1:
-                System.out.println("Hello");
+                System.out.println("HelloName");
                 break;
             case 2:
                 System.out.println("Namaste");
